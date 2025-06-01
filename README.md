@@ -1,6 +1,3 @@
-# multi-class-network-attack-detection-using-AI
- Final-year engineering project: Multi-class classification of network attacks using Machine Learning and Deep Learning (Random Forest, LSTM, Naive Bayes) on CICIDS2017 dataset.
- 
 # 🛡️ Multi-Class Network Attack Classification using Machine Learning and Deep Learning
 
 This repository contains my **Final Year Project (PFA 2)** for the Applied Mathematics and Modeling Engineering program at ENSIT. The goal of the project is to classify different types of **network attacks** using both **Machine Learning (ML)** and **Deep Learning (DL)** techniques.
