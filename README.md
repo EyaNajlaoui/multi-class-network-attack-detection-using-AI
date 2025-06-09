@@ -50,11 +50,6 @@ The models are trained to classify the following types of traffic:
 
 To maximize model performance and address overfitting caused by the dataset’s severe class imbalance (~80% normal traffic), I optimized hyperparameters for all models using manual tuning and random search techniques. This process significantly improved accuracy, achieving 94% for ML models (Random Forest, Gaussian Naive Bayes) and 81% for LSTM.
 
-# Techniques Used 
-
-# - Manual Tuning:
- - Iteratively adjusted parameters based on validation performance to find optimal configurations, balancing model complexity and generalization.
-
 # Model-Specific Optimizations
 
  - Random Forest:
