@@ -50,27 +50,25 @@ The models are trained to classify the following types of traffic:
 
 To maximize model performance and address overfitting caused by the dataset’s severe class imbalance (~80% normal traffic), I optimized hyperparameters for all models using manual tuning and random search techniques. This process significantly improved accuracy, achieving 94% for ML models (Random Forest, Gaussian Naive Bayes) and 81% for LSTM.
 
-# --- Techniques Used ---
+# Techniques Used 
 
 # - Manual Tuning:
  - Iteratively adjusted parameters based on validation performance to find optimal configurations, balancing model complexity and generalization.
 
-# --- Model-Specific Optimizations ---
+# Model-Specific Optimizations
 
-# - Random Forest:
+ - Random Forest:
 Tuned parameters such as n_estimators , max_depth , and min_samples_split to control tree complexity and prevent overfitting. 
 
-# - Gaussian Naive Bayes:
+ - Gaussian Naive Bayes:
 Adjusted var_smoothing to stabilize probability estimates, improving performance on imbalanced classes.
 
-# - LSTM:
+ - LSTM:
 Optimized architecture parameters like number of layers, units per layer , and dropout rate , as well as training parameters like learning rate and batch size .
 
-# --- Outcome ---
-
-# Hyperparameter optimization mitigated overfitting and improved recall
-# for minority classes (e.g., Brute Force, Infiltration).
-# Resulted in robust performance across all attack categories.
+#  Outcome 
+- Hyperparameter optimization mitigated overfitting .
+- Resulted in robust performance across all attack categories.
 ---
 ## 📈 Evaluation Metrics
 
