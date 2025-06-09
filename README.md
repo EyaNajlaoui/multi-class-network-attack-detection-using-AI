@@ -46,7 +46,32 @@ The models are trained to classify the following types of traffic:
 - Splitting into training and test sets
 
 ---
+# ⚙️ Hyperparameter Optimization
 
+To maximize model performance and address overfitting caused by the dataset’s severe class imbalance (~80% normal traffic), I optimized hyperparameters for all models using manual tuning and random search techniques. This process significantly improved accuracy, achieving 94% for ML models (Random Forest, Gaussian Naive Bayes) and 81% for LSTM.
+
+# --- Techniques Used ---
+
+# - Manual Tuning:
+ - Iteratively adjusted parameters based on validation performance to find optimal configurations, balancing model complexity and generalization.
+
+# --- Model-Specific Optimizations ---
+
+# - Random Forest:
+Tuned parameters such as n_estimators , max_depth , and min_samples_split to control tree complexity and prevent overfitting. 
+
+# - Gaussian Naive Bayes:
+Adjusted var_smoothing to stabilize probability estimates, improving performance on imbalanced classes.
+
+# - LSTM:
+Optimized architecture parameters like number of layers, units per layer , and dropout rate , as well as training parameters like learning rate and batch size .
+
+# --- Outcome ---
+
+# Hyperparameter optimization mitigated overfitting and improved recall
+# for minority classes (e.g., Brute Force, Infiltration).
+# Resulted in robust performance across all attack categories.
+---
 ## 📈 Evaluation Metrics
 
 - Accuracy
@@ -55,4 +80,18 @@ The models are trained to classify the following types of traffic:
 - F1-score
 - Confusion Matrix
 - Loss & accuracy curves
-
+---
+## 🛠️ Tools and Libraries
+- Programming Language: Python
+- Data Processing: Pandas, NumPy
+- Visualization: Matplotlib, Seaborn
+- Machine Learning: scikit-learn, imbalanced-learn (for SMOTE)
+- Deep Learning: TensorFlow, Keras
+- Version Control: Git, GitHub
+- Documentation: Jupyter Notebook
+---
+##  📊 Results
+- Machine Learning Models: Achieved 94% accuracy with Random Forest and Gaussian Naive Bayes, excelling in balanced class detection after SMOTE and undersampling.
+- Deep Learning Model: LSTM reached 81% accuracy, effectively capturing temporal patterns in network traffic.
+- Minority Class Detection: Improved recall for rare attacks (e.g., Infiltration, Web Attacks) through data balancing and hyperparameter tuning.
+- Visualizations: Confusion matrices and loss/accuracy curves are available in the notebook for detailed performance analysis.
